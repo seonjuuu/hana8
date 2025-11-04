@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second html</title>
+    <style>
+        aside {
+            height: 50vh;
+            display: flex;
+            vertical-align: middle;
+            border: 1px solid green;
+            width: 50px;
+            justify-content: center;
+        }
+
+        header,
+        nav {
+            width: 500px;
+            height: 25px;
+            border: 1px solid green;
+            padding: 10px 10px 0;
+            margin: 5px 0;
+
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px;
+            width: 600px;
+        }
+
+        .container {
+            width: 400px;
+            border: 2px dotted;
+            border-color: blue;
+            margin: 10px;
+            background-color: yellow;
+            padding: 2rem;
+        }
+
+        img:not(.x) {
+            border: 3px dotted red;
+            margin-left: 15px;
+        }
+
+        .text-center {
+            text-align: center;
+            border: 1px solid green;
+            height: 30px;
+            margin: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <main style="border: 1px solid red; padding: 5px;">
+        <div class="container">
+            <h1>main > container</h1>
+            <section>section</section>
+            <article>
+                <h3>article - title</h3>
+                <figure style="display: inline-flex;">
+                    <img src=" https://avatar.vercel.sh/s" alt="S" class="x" />
+                    <img src="https://unsplash.com/photos/b51xWeb75R4/download?ixid=M3wxMjA3fDB8MXxhbGx8M3x8fHx8fHx8MTc2MTg3OTc1M3w&force=true"
+                        alt="lion" width="150">
+                </figure>
+            </article>
+        </div>
+        <aside style="align-items: center;">aside</aside>
+    </main>
+    <footer class="text-center"><b>&#169; 시니어코딩</b></footer>
+</body>
+
+
+</html>

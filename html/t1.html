@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>firsr html</title>
+    <style>
+        h1 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        main,
+        article,
+        aside {
+            border: 1px solid red;
+        }
+
+        main section {
+            border: 1px dotted blue;
+            /* dotted : 점선*/
+        }
+
+        .container {
+            background-color: yellow;
+            width: 100px;
+        }
+
+        ul li:first-child {
+            font-weight: 700;
+        }
+
+        ol li:nth-child(odd):not(.x) {
+            /*클래스 x(.x)인 것은 제외*/
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Title</h1>
+        <nav>Nav</nav>
+    </header>
+    <main style="display: flex; align-items: center; justify-content: center;">
+        <div class="container">
+            <section aria-label="section1" onclick="console.log('xxx')" aria-hidden="true"> <!-- 개발자가 숨겨서 쓰는 클릭 -->
+                <h3>Section</h3>
+                <ul>
+                    <li>11</li>
+                    <li><a href="#" onclick="" role="button">22</a></li> <!-- button 태크를 사용할 수 없을 때-->
+                    <li>33</li>
+                </ul>
+            </section>
+            <article draggable="true"> <!-- 드래그 -->
+                <h3>Article</h3>
+                <!-- ol>li{$}*3 -->
+                <ol>
+                    <li>1</li>
+                    <li>2</li>
+                    <li class="x">3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ol>
+            </article>
+        </div>
+        <aside style="width: 100px; height: 200px; display: flex; justify-content: center; align-items: end;">Aside
+        </aside>
+    </main>
+    <footer style="text-align: center;">&#169; Hanaro 2025</footer>
+</body>
+
+</html>

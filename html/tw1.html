@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> <!--tailwind-->
+    <style type="text/tailwindcss">
+        @theme {
+            --color-clifford: #da373d;
+        }
+        @layer base {
+            button {
+                @apply border border-green-500 bg-green-300 px-2 rounded-md cursor-pointer hover:bg-green-400 hover:text-white active:ring-2 active:scale-105;
+            }
+        }
+
+        @layer utility {
+            .btn {
+                background-color: skyblue;
+
+            }
+        }
+    </style>
+</head>
+
+<body class="h-screen bg-green-100 grid place-items-center">
+    <div class="flex flex-col md:flex-row [&>button]:shadow-md [&>button]:hover:shadow-xl">
+        <button class=" ">Button</button>
+        <button class="btn">Button2</button>
+    </div>
+    <h1 class="text-3xl font-bold underline">
+        Hello world!
+    </h1>
+    <div class="border px-5">DIV</div>
+
+    <div class="container flex gap-2">
+        <img src="https://unsplash.com/photos/b51xWeb75R4/download?ixid=M3wxMjA3fDB8MXxhbGx8M3x8fHx8fHx8MTc2MTg3OTc1M3w&force=true"
+            alt="lion" width="100px" style="border: 1px solid #aaa; border-radius: 100%;">
+        <div class="[&>small]:block [&>small]:text-gray-500">
+            <div>mhnaa6469@gmail.com</div>
+            <small>description...111</small>
+            <small>description...222</small>
+        </div>
+    </div>
+</body>
+
+</html>
